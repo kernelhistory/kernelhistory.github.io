@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="blue">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>anfim.io — Anfim | Software & Security Developer</title>
+  <meta name="description" content="Anfim (anfim.io) — разработка нативных Android-приложений (Kotlin, Material Design 3), криптографических и Local-First OSINT инструментов, Python-автоматизации." />
+  <meta name="theme-color" content="#0b0e14" />
+
+  <meta property="og:title" content="anfim.io — Anfim | Software & Security Developer" />
+  <meta property="og:description" content="Android (Kotlin / MD3), Local-First Architecture, Security & OSINT Tools. Создатель SpiderPulse." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/88939573?v=4" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%2311141c'/%3E%3Cpath d='M32 14L48 48H40L36.5 40H27.5L24 48H16L32 14ZM32 25.5L29 33H35L32 25.5Z' fill='%23a8c7fa'/%3E%3Ccircle cx='49' cy='16' r='5' fill='%236dd58c'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400..600,0..1,0" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <div class="top-nav-wrapper">
+    <header class="top-nav" role="banner">
+      <a href="#top" class="brand-logo" aria-label="anfim.io">
+        <span class="brand-dot"></span>
+        <span>anfim<span class="tld">.io</span></span>
+      </a>
+
+      <nav aria-label="Основная навигация">
+        <ul class="nav-links">
+          <li><a href="#top" class="nav-link active">Главная</a></li>
+          <li><a href="#about" class="nav-link">Обо мне</a></li>
+          <li><a href="#projects" class="nav-link">Проекты</a></li>
+          <li><a href="#focus" class="nav-link">Направления</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="theme-switcher" role="group" aria-label="Палитра Material You" title="Сменить цветовой акцент Material You">
+          <button class="theme-btn active" data-set-theme="blue" aria-label="Google Blue"></button>
+          <button class="theme-btn" data-set-theme="emerald" aria-label="Android Emerald"></button>
+          <button class="theme-btn" data-set-theme="violet" aria-label="Material Violet"></button>
+          <button class="theme-btn" data-set-theme="coral" aria-label="Pixel Coral"></button>
+        </div>
+
+        <a href="https://t.me/real_chert" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-filled md-btn-sm">
+          <span class="material-symbols-rounded" style="font-size:18px">send</span>
+          <span>@real_chert</span>
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <main id="top" class="container">
+
+    <section class="hero-section" aria-label="Главный экран">
+      <div class="hero-bento">
+
+        <div class="md-card hero-main-card">
+          <div>
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              <span>Open for projects &amp; collaboration</span>
+            </div>
+
+            <h1 class="hero-title">
+              Привет, я <span class="accent">Anfim</span>.<br />
+              Создаю быстрый и безопасный софт.
+            </h1>
+
+            <p class="hero-subtitle">
+              Разработчик нативных Android-приложений на <strong>Kotlin</strong>, инструментов информационной безопасности и <strong>Local-First</strong> систем в эстетике Google Material Design 3.
+            </p>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="https://t.me/real_chert" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-filled">
+              <span class="material-symbols-rounded">send</span>
+              <span>Написать в Telegram</span>
+            </a>
+            <a href="#projects" class="md-btn md-btn-tonal">
+              <span class="material-symbols-rounded">deployed_code</span>
+              <span>Смотреть проекты</span>
+            </a>
+            <a href="https://github.com/kernelhistory" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-outlined">
+              <span class="material-symbols-rounded">code</span>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-side-stack">
+          <div class="md-card profile-card">
+            <div class="profile-header">
+              <div class="avatar-wrap">
+                <img
+                  id="profile-avatar"
+                  src="./avatar.jpeg"
+                  alt="Аватар Anfim"
+                  class="avatar-img"
+                  loading="eager"
+                />
+              </div>
+              <div class="profile-meta">
+                <h2>Anfim</h2>
+                <p class="mono">@real_chert · anfim.io</p>
+              </div>
+            </div>
+
+            <div class="profile-badges">
+              <span class="md-chip">
+                <span class="material-symbols-rounded">android</span>
+                Kotlin &amp; Android
+              </span>
+              <span class="md-chip">
+                <span class="material-symbols-rounded">encrypted</span>
+                AES-256 / Security
+              </span>
+              <span class="md-chip">
+                <span class="material-symbols-rounded">palette</span>
+                Material Design 3
+              </span>
+              <span class="md-chip">
+                <span class="material-symbols-rounded">terminal</span>
+                Python &amp; Linux
+              </span>
+            </div>
+
+            <div class="quick-metrics">
+              <div class="metric-box">
+                <div class="metric-value">Local-First</div>
+                <div class="metric-label">Приватность и автономность</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-value">MD3 UI</div>
+                <div class="metric-label">Чистый дизайн Google</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">
+            <span class="material-symbols-rounded" style="font-size:16px">memory</span>
+            <span>01 / ОБО МНЕ И ТЕХНОЛОГИЯХ</span>
+          </div>
+          <h2 id="about-heading" class="section-title">Инженерный минимализм и безопасность</h2>
+        </div>
+        <p class="section-desc">
+          Сочетаю продуманную внутреннюю архитектуру, криптографическую защиту данных и современный интерфейс без визуального шума.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="md-card about-text">
+          <p>
+            Фокусируюсь на создании <strong>прикладных инструментов и мобильных приложений</strong>, которые работают быстро, предсказуемо и полностью контролируются пользователем.
+          </p>
+          <p>
+            В разработке придерживаюсь принципов <strong>Local-First</strong> (данные хранятся и обрабатываются локально с надёжным шифрованием) и дизайн-системы <strong>Material Design 3 (Material You)</strong>.
+          </p>
+
+          <div class="principles-list">
+            <div class="principle-item">
+              <span class="material-symbols-rounded">shield_lock</span>
+              <div>
+                <h4>Security &amp; Privacy by Design</h4>
+                <p>Шифрование AES-256-GCM, отсутствие лишней телеметрии и безопасная работа с памятью.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <span class="material-symbols-rounded">layers</span>
+              <div>
+                <h4>Модульная чистая архитектура</h4>
+                <p>Легко расширяемый код, изолированные модули и высокая скорость отклика интерфейса.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md-card stack-groups">
+          <div>
+            <div class="stack-group-title">
+              <span class="material-symbols-rounded" style="font-size:18px">phone_android</span>
+              <span>Android &amp; Mobile Development</span>
+            </div>
+            <div class="chips-wrap">
+              <span class="md-chip"><span class="material-symbols-rounded">code</span>Kotlin</span>
+              <span class="md-chip"><span class="material-symbols-rounded">widgets</span>Material Design 3</span>
+              <span class="md-chip"><span class="material-symbols-rounded">bolt</span>Coroutines &amp; Flow</span>
+              <span class="md-chip"><span class="material-symbols-rounded">architecture</span>Clean Architecture</span>
+              <span class="md-chip"><span class="material-symbols-rounded">storage</span>Local-First DB</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="stack-group-title">
+              <span class="material-symbols-rounded" style="font-size:18px">security</span>
+              <span>Security, Cryptography &amp; OSINT</span>
+            </div>
+            <div class="chips-wrap">
+              <span class="md-chip"><span class="material-symbols-rounded">vpn_key</span>AES-256-GCM</span>
+              <span class="md-chip"><span class="material-symbols-rounded">travel_explore</span>OSINT Aggregation</span>
+              <span class="md-chip"><span class="material-symbols-rounded">biotech</span>Forensic Analysis</span>
+              <span class="md-chip"><span class="material-symbols-rounded">lock</span>Zero-Trust Storage</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="stack-group-title">
+              <span class="material-symbols-rounded" style="font-size:18px">terminal</span>
+              <span>Backend, Scripting &amp; Environment</span>
+            </div>
+            <div class="chips-wrap">
+              <span class="md-chip"><span class="material-symbols-rounded">Data_Object</span>Python</span>
+              <span class="md-chip"><span class="material-symbols-rounded">smart_toy</span>Telegram Bots &amp; API</span>
+              <span class="md-chip"><span class="material-symbols-rounded">html</span>HTML5 / CSS3 / JS</span>
+              <span class="md-chip"><span class="material-symbols-rounded">computer</span>Linux &amp; Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">
+            <span class="material-symbols-rounded" style="font-size:16px">deployed_code</span>
+            <span>02 / ПОРТФОЛИО</span>
+          </div>
+          <h2 id="projects-heading" class="section-title">Избранные проекты</h2>
+        </div>
+        <p class="section-desc">
+          Открытые разработки и продукты.
+        </p>
+      </div>
+
+      <div id="projects-container" class="projects-grid">
+        <article class="md-card project-card-featured">
+          <div>
+            <div class="project-badge-row">
+              <span class="project-badge">
+                <span class="material-symbols-rounded" style="font-size:15px">verified</span>
+                Featured · Android &amp; Security
+              </span>
+              <span class="project-meta-pill">Kotlin</span>
+              <span class="project-meta-pill" id="spiderpulse-updated">Open Source</span>
+            </div>
+
+            <h3 class="project-title">SpiderPulse</h3>
+            <p class="project-desc">
+              Модульный Local-First OSINT-агрегатор и криминалистический анализатор для Android. Построен с упором на автономную работу, криптографическую защиту данных AES-256-GCM и нативный интерфейс в стиле Material Design 3.
+            </p>
+
+            <ul class="project-highlights">
+              <li>
+                <span class="material-symbols-rounded">check_circle</span>
+                <span>Локальное шифрованное хранилище на базе <strong>AES-256-GCM</strong></span>
+              </li>
+              <li>
+                <span class="material-symbols-rounded">check_circle</span>
+                <span>Модульная архитектура сбора и корреляции OSINT / Forensic-данных</span>
+              </li>
+              <li>
+                <span class="material-symbols-rounded">check_circle</span>
+                <span>Современный тёмный интерфейс по гайдлайнам <strong>Google Material 3</strong></span>
+              </li>
+            </ul>
+
+            <div class="chips-wrap">
+              <span class="md-chip">Kotlin</span>
+              <span class="md-chip">Android SDK</span>
+              <span class="md-chip">AES-256-GCM</span>
+              <span class="md-chip">Material Design 3</span>
+              <span class="md-chip">OSINT &amp; Forensics</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/kernelhistory/SpiderPulse" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-filled">
+                <span class="material-symbols-rounded">open_in_new</span>
+                <span>Открыть на GitHub</span>
+              </a>
+              <a href="https://github.com/kernelhistory/SpiderPulse/releases" target="_blank" rel="noopener noreferrer" class="md-btn md-btn-tonal">
+                <span class="material-symbols-rounded">download</span>
+                <span>Релизы / APK</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-preview-panel" aria-hidden="true">
+            <div class="terminal-top">
+              <div class="terminal-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span>SpiderPulse · ModuleEngine.kt</span>
+            </div>
+            <div class="code-lines">
+              <div><span class="c">// Local-First Encrypted Forensic Vault</span></div>
+              <div><span class="k">object</span> SpiderPulseVault {</div>
+              <div>&nbsp;&nbsp;<span class="k">val</span> cipher = <span class="s">"AES/GCM/NoPadding"</span></div>
+              <div>&nbsp;&nbsp;<span class="k">val</span> keySize = <span class="s">256</span></div>
+              <div>&nbsp;&nbsp;<span class="k">val</span> uiTheme = <span class="s">"MaterialDesign3.DynamicDark"</span></div>
+              <div>&nbsp;&nbsp;<span class="k">fun</span> verifyIntegrity(): Boolean = <span class="s">true</span></div>
+              <div>}</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="focus" class="section" aria-labelledby="focus-heading">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">
+            <span class="material-symbols-rounded" style="font-size:16px">explore</span>
+            <span>03 / СПЕЦИАЛИЗАЦИЯ</span>
+          </div>
+          <h2 id="focus-heading" class="section-title">Чем я занимаюсь</h2>
+        </div>
+        <p class="section-desc">
+          Ключевые направления разработки, архитектуры и исследований.
+        </p>
+      </div>
+
+      <div class="focus-grid">
+        <div class="md-card focus-card">
+          <div class="focus-icon">
+            <span class="material-symbols-rounded">android</span>
+          </div>
+          <h3>Нативная Android-разработка</h3>
+          <p>
+            Проектирование и создание современных Android-приложений на Kotlin с использованием гайдлайнов Google Material Design 3, плавных анимаций и офлайн-хранилищ.
+          </p>
+        </div>
+
+        <div class="md-card focus-card">
+          <div class="focus-icon">
+            <span class="material-symbols-rounded">encrypted</span>
+          </div>
+          <h3>OSINT &amp; Криптобезопасность</h3>
+          <p>
+            Разработка модульных инструментов анализа данных, локальных криптоконтейнеров (AES-256-GCM) и решений с архитектурой нулевого доверия.
+          </p>
+        </div>
+
+        <div class="md-card focus-card">
+          <div class="focus-icon">
+            <span class="material-symbols-rounded">smart_toy</span>
+          </div>
+          <h3>Автоматизация и экосистема Telegram</h3>
+          <p>
+            Создание кастомных плагинов, ботов и интеграций на Python, а также быстрых и лёгких веб-интерфейсов.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section" aria-labelledby="contacts-heading">
+      <div class="md-card contacts-card">
+        <div class="section-header" style="margin-bottom: 8px;">
+          <div>
+            <div class="section-eyebrow">
+              <span class="material-symbols-rounded" style="font-size:16px">alternate_email</span>
+              <span>04 / КОНТАКТЫ</span>
+            </div>
+            <h2 id="contacts-heading" class="section-title">Связаться со мной</h2>
+          </div>
+
+          <button type="button" id="copy-tg-btn" class="md-btn md-btn-tonal md-btn-sm">
+            <span class="material-symbols-rounded" style="font-size:18px">content_copy</span>
+            <span>Скопировать @real_chert</span>
+          </button>
+        </div>
+
+        <p class="section-desc">
+          Основной канал связи — Telegram. Новые соцсети и ссылки будут появляться здесь по мере обновления.
+        </p>
+
+        <div id="socials-container" class="socials-grid">
+          <a href="https://t.me/real_chert" target="_blank" rel="noopener noreferrer" class="social-tile primary-tile">
+            <div class="social-left">
+              <div class="social-icon-box">
+                <span class="material-symbols-rounded">send</span>
+              </div>
+              <div class="social-info">
+                <h4>Telegram</h4>
+                <span>@real_chert</span>
+              </div>
+            </div>
+            <span class="material-symbols-rounded">arrow_outward</span>
+          </a>
+
+          <a href="https://github.com/kernelhistory" target="_blank" rel="noopener noreferrer" class="social-tile">
+            <div class="social-left">
+              <div class="social-icon-box">
+                <span class="material-symbols-rounded">code</span>
+              </div>
+              <div class="social-info">
+                <h4>GitHub</h4>
+                <span>@kernelhistory</span>
+              </div>
+            </div>
+            <span class="material-symbols-rounded">arrow_outward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-inner">
+      <div>
+        <strong class="mono">anfim.io</strong> · Сделано в стиле Google Material Design 3
+      </div>
+      <div class="mono">
+        © <span id="year">2026</span> Anfim · <a href="https://t.me/real_chert" target="_blank" rel="noopener noreferrer">@real_chert</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="snackbar" class="md-snackbar" role="status" aria-live="polite">
+    <span class="material-symbols-rounded" style="font-size:19px">check_circle</span>
+    <span id="snackbar-text">Скопировано в буфер обмена</span>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
